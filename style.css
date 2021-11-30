@@ -1,0 +1,181 @@
+
+
+#myself{
+    background-color: red;
+}
+#side-all
+{
+    background-color: blue;
+}
+
+#side-youlike
+{
+    background-color:rgb(102, 0, 128);
+}
+
+#side-likeyou
+{
+    background-color:lawngreen;
+}
+
+.side-box{
+    color:white;
+    font-size:16px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 15px;
+    box-shadow: 2px 2px  #bdbdbd;
+    
+}
+
+.side-box h3{
+    margin-top: 0px;
+    margin-bottom:15px;
+
+}
+
+#post-form{
+    text-align: center;
+    height: 100px;
+    background-color: #eceff1;
+    padding:15px;
+    padding-bottom: 35px;
+}
+
+#post-form textarea
+{
+    font-size: 16px;
+    display: block;
+    width: 99%;
+    resize: none;
+    height:60px;
+}
+#post-form button
+{
+    color: #f2f2f2;
+    background-color: #333;
+    font-size: 16px;
+    font-family:monospace ;
+    line-height: 30px;
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    transition: all .2s;    /*allows to change property over a period of time ex. hover */
+    border-bottom: 0px;
+}
+
+#post-form button:hover
+{
+    background-color: #ddd;
+    color:black;
+    
+}
+
+#wrapper{
+    max-width:808px;
+    margin: 0px auto;
+}
+
+#wrapper a{
+    color: white;
+    text-decoration:none;
+}
+
+#wrapper a:hover{
+    text-decoration: underline;
+    
+}
+
+.post-list{
+    padding: 0px;  /*To remove the default styling of list*/
+}
+
+.list-item{
+    
+    background-color: #1565c0;
+    color:white;
+    font-size:16px;
+    margin: 15px 0px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px #bdbdbd;
+    list-style: none;
+}
+
+/* To apply styling only to the first sub-elemet of a tag*/
+
+.list-item div:first-child{
+    /*font-size: 25px;*/
+    margin-bottom: 15px;
+
+}
+
+/* To select the nth child*/
+.list-item div:nth-child(2){
+    font-size: 12px;
+    border-top:1px solid #184d8a;
+    padding-top: 15px;
+}
+/*To select the link with this 2nd div child*/
+.list-item div:nth-child(2) a{
+    font-weight: bold;
+    display: block;
+    float:right;
+}
+
+#left-profile{
+
+    width:28%;
+    float:left;
+
+}
+
+#right-profile{
+    width:72%;
+    padding-top:10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    float:left;
+}
+
+@media (max-width: 750px)
+{
+    #left-profile, #right-profile{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    .side-box{
+        width:50%;
+        float: left;
+        box-sizing: border-box;
+        margin: 5px 0px;
+    }
+
+    .side-box:nth-child(even){
+        margin-left: 3%;
+        width:47%;
+    }
+
+    .boxcontent{
+        height: 100px;
+        margin-bottom: 15px;
+        overflow-y: auto; /*if contents does not fit, there will appear a scroll bar */
+    }
+}
+
+@media (max-width: 680px){
+    .side-box{
+        width: 100%;
+    }
+
+    .side-box:nth-child(even){
+        width:100%;
+        margin-left:0px;
+    }
+
+    .boxcontent{
+        height: auto;
+    }
+}
